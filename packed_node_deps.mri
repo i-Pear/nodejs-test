@@ -1,0 +1,37 @@
+create packed_node_deps.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/histogram/libhistogram.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/uvwasi/libuvwasi.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/libnode.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/libnode_text_start.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_snapshot.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_libplatform.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/icu/libicui18n.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/zlib/libzlib.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/llhttp/libllhttp.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/cares/libcares.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/uv/libuv.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/nghttp2/libnghttp2.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/brotli/libbrotli.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/openssl/libopenssl.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/ngtcp2/libngtcp2.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/ngtcp2/libnghttp3.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/base64/libbase64.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/base64/libbase64_ssse3.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/base64/libbase64_sse41.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/base64/libbase64_sse42.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/base64/libbase64_avx.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/base64/libbase64_avx2.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/simdutf/libsimdutf.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/ada/libada.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/icu/libicuucx.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/icu/libicudata.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_base_without_compiler.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_libbase.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_zlib.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_compiler.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/tools/v8_gypfiles/libv8_initializers.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/zlib/libzlib_inflate_chunk_simd.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/zlib/libzlib_adler32_simd.a
+addlib /nodejs/node-v18.17.1/out/Release/obj.target/deps/zlib/libzlib_crc32_simd.a
+save
+end
