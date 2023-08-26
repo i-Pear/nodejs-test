@@ -13,7 +13,7 @@ RUN pacman -S --noconfirm make wget python3 gcc
 RUN pacman -U /packages/*.zst --noconfirm
 RUN cd /nodejs && make
 
-RUN cd /output && ar -M < /pack/packed_node_deps.mri
+RUN cd /pack && ar -M < /pack/packed_node_deps.mri
 RUN cp /nodejs/node-v18.17.1/out/Release/obj.target/node_text_start/src/large_pages/node_text_start.o /pack
 RUN cp /nodejs/node-v18.17.1/out/Release/obj.target/node/src/node_main.o /pack
 RUN cp /nodejs/node-v18.17.1/out/Release/obj.target/node/gen/node_snapshot.o /pack
