@@ -1,0 +1,21 @@
+#!/bin/bash
+
+is_compiling=$(echo "$@" | grep -w "\-o")
+
+no_linking=$(echo "$@" | grep -w "\-c")
+
+if [ "$is_compiling" == "" ]
+then
+	# origin
+	x86_64-linux-musl-g++ $@
+else
+
+if [ "$no_linking" != "" ]
+then
+	# -c mode
+	x86_64-linux-musl-g++ -nostdinc++ -isystem /usr/include/c++/v1/ $@
+else
+	# link mode
+	x86_64-linux-musl-g++ $@ -nostdinc++ /usr/lib/libc++.a /usr/lib/libc++abi.a
+fi
+fi
