@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-ENV HTTP_PROXY=http://114.212.81.91:7890 HTTPS_PROXY=http://114.212.81.91:7890
+# ENV HTTP_PROXY=http://114.212.81.91:7890 HTTPS_PROXY=http://114.212.81.91:7890
 RUN pacman -Syyu --noconfirm
 
 RUN mkdir /packages && mkdir /nodejs
